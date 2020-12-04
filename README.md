@@ -5,8 +5,8 @@ Juego de ajedrez desde la linea de comandos
 Escribir en la linea de comandos las coordenadas de la pieza que quieres seleccionar, luego escribir cuantos espacios se va a mover la pieza en x, y.
 
 ## Notes
-La coordenada y está inververtida.
-El guardado no funciona.
+- La coordenada y está invertida.
+- El guardado no funciona.
 
 ## How to run
 from command line run:
