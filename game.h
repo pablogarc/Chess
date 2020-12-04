@@ -28,6 +28,6 @@ void Knight(Piece* Tablero[8][8], int, int, int, int*);
 void Queen(Piece* Tablero[8][8], int, int, int, int*);
 void King(Piece* Tablero[8][8], int, int, int, int*, PosKing* PKing);
 
-void InitGame(Piece* Tablero[8][8], FILE*, PosKing* PKing);
+void InitGame(Piece* Tablero[8][8], FILE*, FILE*, PosKing* PKing);
 
 #endif

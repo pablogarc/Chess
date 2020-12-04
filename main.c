@@ -6,20 +6,20 @@
 
 int main()
 {
-   int NewGame = 0;
+   int NewGame;
    int init = 0;
 
    FILE* Game;
 
-   //FILE* Board;
+   FILE* Board;
 
    Piece* Tablero[8][8];
 
-	PosKing* PKing;
+	PosKing* PKing = (PosKing*)malloc(sizeof(PosKing*));
 
-   while(init != 1){
-      //printf("Do you want to new game or upload game ? (New game = 0) (Upload game = 1) ");
-      //scanf("%d", &NewGame);
+   while (init != 1) {
+      printf("Do you want to new game or upload game ? (New game = 0) (Upload game = 1) ");
+      scanf("%d", &NewGame);
 
       if(NewGame == 0){
          CreateBoard(Tablero);
@@ -30,11 +30,10 @@ int main()
 		   PKing->WKx = 5;
 			PKing->WKy = 8;
 			PKing->WKcheck = 0;
-         InitGame(Tablero, Game, PKing);
+         InitGame(Tablero, Game, Board, PKing);
          break;
       }
       else if(NewGame == 1){
-         /*
          char tmproot[1000] = "";
          char fullroot[1000] = "";
          char slot[1];
@@ -76,7 +75,6 @@ int main()
          fclose(Board);
 
          InitGame(Tablero, Game, Board, PKing);
-         */
          break;
       }
       else{

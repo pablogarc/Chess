@@ -1117,7 +1117,7 @@ void King(Piece* Tablero[8][8], int Posx, int Posy, int player, int* error, PosK
 }
 
 
-void InitGame(Piece* Tablero[8][8], FILE* Game, PosKing* PKing){
+void InitGame(Piece* Tablero[8][8], FILE* Game, FILE* Board, PosKing* PKing){
    int game = 0;
    int Posx, Posy;
 	int save;
@@ -1138,7 +1138,6 @@ void InitGame(Piece* Tablero[8][8], FILE* Game, PosKing* PKing){
          printf("----Player 2 (blacks) wins----\n");
          break;
       }
-      /*
       printf("Do you want to save your game ? (Yes = 0) (No = 1)  ");
       scanf("%d", &save);
 
@@ -1169,7 +1168,6 @@ void InitGame(Piece* Tablero[8][8], FILE* Game, PosKing* PKing){
          fclose(Board);
          break;
       }
-      */
       if(player == 1)
          printf("(Whites) Player 1 -- Move\n");
       else
