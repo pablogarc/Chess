@@ -12,7 +12,9 @@ Escribir en la linea de comandos las coordenadas de la pieza que quieres selecci
 from command line run:
 - make run
 - ./game
+
 or
+
 - gcc main.c game.c board.c -o game
 
 ## Delete game
